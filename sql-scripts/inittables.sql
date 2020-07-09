@@ -1,5 +1,3 @@
-CREATE DATABASE `auth` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
 CREATE TABLE `user` (
   `username` varchar(16) NOT NULL,
   `email` varchar(255) DEFAULT NULL,

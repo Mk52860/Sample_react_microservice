@@ -1,0 +1,4 @@
+FROM ubuntu:16.04 AS base
+COPY install-stuff.sh /.
+RUN sh /install-stuff.sh
+ENV PATH=”/node-v10.21.0-linux-x64/bin:${PATH}”

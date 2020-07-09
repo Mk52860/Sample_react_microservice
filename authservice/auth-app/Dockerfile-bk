@@ -1,0 +1,13 @@
+	FROM ubuntu:16.04 AS base
+
+	RUN apt-get update && mkdir -p /auth-app
+
+	ADD ./ /auth-app/
+
+	RUN sh /auth-app/install-stuff.sh
+				
+	ENV PATH="/node-v10.21.0-linux-x64/bin:${PATH}"
+		
+	WORKDIR /auth-app
+
+#ENTRYPOINT ["npm", "start"]

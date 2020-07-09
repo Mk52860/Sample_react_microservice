@@ -1,6 +1,6 @@
 let database = require('mysql');
 var connection = database.createConnection({
-    host     : 'localhost',
+    host     : 'dev_sample_react_microservice_mysql_1',
     user     : 'root',
     password : 'password',
     database : 'auth'
